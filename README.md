@@ -4,9 +4,17 @@ Serves an HTML paginated sitemap of all posts at /sitemap-page, grouped by year.
 
 ## Install
 
+Get the plugin:
+
+```bash
+git clone https://github.com/parkwoo/wawoo-plugin-sitemap-html
+```
+
+Then link it from a wawoo-cms checkout:
+
 ```
 cd /path/to/wawoo-cms
-php bin/wawoo plugin:link /home/git/wawoo-plugin-sitemap-html
+php bin/wawoo plugin:link /path/to/wawoo-plugin-sitemap-html
 ```
 
 Enable via config.local.php ENABLED_PLUGINS or admin Plugins page.
@@ -15,7 +23,7 @@ Enable via config.local.php ENABLED_PLUGINS or admin Plugins page.
 
 ```
 cd /path/to/wawoo-cms
-php bin/wawoo plugin:link /home/git/wawoo-plugin-sitemap-html
+php bin/wawoo plugin:link /path/to/wawoo-plugin-sitemap-html
 phpunit tests/Plugin/SitemapHtml*Test.php
 ```
 
